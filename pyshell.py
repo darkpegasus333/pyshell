@@ -37,7 +37,8 @@ try:
                 os.chdir(pieces[1])
             else:
                 try:
-                    pieces[0] = programs[pieces[0]] #do a switcheroo for the full path.
+                    if pieces[0] in programs:
+                        pieces[0] = programs[pieces[0]] #do a switcheroo for the full path.
                     call(pieces)
                 except FileNotFoundError:
                     print("This is not a command I recognize.")
