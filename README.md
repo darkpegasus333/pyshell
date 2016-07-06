@@ -4,10 +4,10 @@ Getting back into programming so I decided to dive head first back into the thic
 
 I have no idea what I'm doing.
 
-TODO:
-Tab completetion.
-Figure out a better way to deal with the PATH
-(maaaaybe) work on flow control/piping/etc...
+#### TODO:
 
-TODO2:
-learn markdown syntax
+* Tab completetion.
+* Figure out a better way to deal with the PATH
+* (maaaaybe) work on flow control/piping/etc...
+* "~" resolution. (shouldn't be too hard...right?)
+* give it a cooler name...
