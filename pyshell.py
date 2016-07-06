@@ -17,6 +17,14 @@ for dir in dirs_in_path:
     for item in os.listdir(dir):
         programs[item] = dir + item
 
+def cd(dir):
+    if dir.startswith('~'):
+        dir = dir.replace('~', os.path.expanduser('~'))
+    try:
+        os.chdir(dir)
+    except FileNotFoundError:
+        print('That directory does not exist')
+
 
 
 def help():
@@ -34,7 +42,7 @@ try:
             if pieces[0] == 'help':
                 help()
             elif pieces[0] == 'cd':
-                os.chdir(pieces[1])
+                cd(pieces[1])
             else:
                 try:
                     if pieces[0] in programs:

@@ -9,5 +9,5 @@ I have no idea what I'm doing.
 * Tab completetion.
 * Figure out a better way to deal with the PATH
 * (maaaaybe) work on flow control/piping/etc...
-* "~" resolution. (shouldn't be too hard...right?)
+* ~~"~" resolution. (shouldn't be too hard...right?)~~
 * give it a cooler name...
