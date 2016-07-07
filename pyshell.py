@@ -40,7 +40,8 @@ def forloop(stuff):
         else:
             break
     print(sub_proc)
-
+    action = stuff[stuff.index(':')+1:]
+    print(action)
 
 
 
