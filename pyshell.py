@@ -54,6 +54,8 @@ def execute(command, stdout=None):
         cd(command[1])
     elif command[0] == 'for':
         forloop(command[1:]) #get rid of 'for' and send the rest.
+    elif command[0] == "echo":
+        print(command[1:])
     else:
         try:
             if command[0] in programs:
